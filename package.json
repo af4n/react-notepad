@@ -2,6 +2,7 @@
   "name": "react-notepad",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://af4n.github.io/react-notepad",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -19,7 +20,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "build": "gh-pages -d build",
+    "deploy": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
